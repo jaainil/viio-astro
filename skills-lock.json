@@ -41,6 +41,11 @@
       "sourceType": "github",
       "computedHash": "acbafe2fcbfc3a1a67db47c2f6299d5c0e16f543c4e683e38e74a8ccb54888fb"
     },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "6bd4cde58bb701b5dc90a0fae2f0ea3efc7c3e6fd2ae754083fa659930e7d39f"
+    },
     "webgl": {
       "source": "martinholovsky/claude-skills-generator",
       "sourceType": "github",
