@@ -1,29 +1,33 @@
-FROM node:20-alpine AS base
+FROM oven/bun:1.1 AS base
+WORKDIR /app
 
+# Install dependencies
 FROM base AS deps
-WORKDIR /app
 COPY package.json bun.lock ./
-RUN npm install
+RUN bun install --frozen-lockfile
 
+# Build the application
 FROM base AS builder
-WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+RUN bun run build
 
+# Production runner
 FROM base AS runner
 WORKDIR /app
+
 ENV NODE_ENV=production
 
-RUN addgroup -g 1001 nodejs && \
-    adduser -u 1001 -G nodejs -D astro
-
+# Copy built assets
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/package.json ./
 
-RUN npm install -g serve
+# Install a simple static server
+RUN bun install -g serve
 
-USER astro
+# Set non-root user
+USER bun
 
 EXPOSE 4321
-CMD ["serve", "-s", "dist", "-l", "4321"]
+
+# Serve the application
+CMD ["serve", "dist", "-l", "4321", "-s"]
