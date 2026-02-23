@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6000" height="4000" viewBox="0 0 6000 4000">
+  <rect fill="#16213e" width="6000" height="4000"/>
+  <rect x="2800" y="1800" width="400" height="400" fill="#e94560"/>
+  <circle cx="2000" cy="1500" r="300" fill="#0f3460"/>
+  <circle cx="4000" cy="2500" r="400" fill="#e94560" opacity="0.5"/>
+  <text x="3000" y="2000" font-family="Arial" font-size="80" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">Brand Photography</text>
+</svg>
