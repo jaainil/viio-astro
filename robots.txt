@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shreecreatixagency.com/sitemap-index.xml
