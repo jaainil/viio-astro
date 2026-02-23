@@ -21,9 +21,7 @@ RUN addgroup -g 1001 nodejs && \
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package.json ./
 
-RUN bun add -g serve
-
 USER astro
 
 EXPOSE 4321
-CMD ["serve", "-s", "dist", "-l", "4321"]
+CMD ["npx", "serve", "-s", "dist", "-l", "4321"]
