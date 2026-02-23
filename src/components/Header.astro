@@ -1,6 +1,6 @@
 ---
 import Button from "./Button.astro";
-import Logo from "../assets/logo.svg";
+import shreeLogo from "../assets/shree-cretex.png";
 import type { Link } from "../types";
 
 interface Props {
@@ -19,7 +19,7 @@ const { logoUrl, logoAlt, link1, link2, links } = Astro.props;
     <div class="inner u-container">
       <div class="wrapper">
         <a class="logo" href={logoUrl}>
-          <Logo />
+          <img src={shreeLogo.src} alt={logoAlt} />
           <span class="u-sr-only">{logoAlt}</span>
         </a>
 
@@ -45,7 +45,7 @@ const { logoUrl, logoAlt, link1, link2, links } = Astro.props;
           }
           {link2 ? <Button {...link2} revealable={false} /> : null}
 
-          <button type="button" class="toggle" aria-label="">
+          <button type="button" class="toggle" aria-label="Toggle mobile menu">
             <span class="u-sr-only">Toggle Mobile Menu</span>
             <span aria-hidden>
               <span></span>
@@ -130,12 +130,9 @@ const { logoUrl, logoAlt, link1, link2, links } = Astro.props;
     position: relative;
     z-index: 3;
 
-    svg {
-      width: 2.4rem;
-
-      :global(path) {
-        fill: currentcolor;
-      }
+    img {
+      height: 2.4rem;
+      width: auto;
     }
   }
 

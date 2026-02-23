@@ -1,0 +1,239 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroHome from "../components/HeroHome.astro";
+import TextMarquee from "../components/TextMarquee.astro";
+import GalleryText from "../components/GalleryText.astro";
+// import ImageMarquee from "../components/ImageMarquee.astro";
+import StepsTimelineImage from "../components/StepsTimelineImage.astro";
+import StepsTimeline from "../components/StepsTimeline.astro";
+import Statements from "../components/Statements.astro";
+import Introducing from "../components/Introducing.astro";
+import GL from "../components/GL.astro";
+import GLPlaces from "../components/GlPlaces.astro";
+
+import logo1 from "../assets/logoipsum-344.svg";
+import logo2 from "../assets/logoipsum-350.svg";
+import logo3 from "../assets/logoipsum-345.svg";
+import logo4 from "../assets/logoipsum-385.svg";
+import logo5 from "../assets/logoipsum-375.svg";
+import logo6 from "../assets/logoipsum-378.svg";
+import logo7 from "../assets/logoipsum-346.svg";
+import logo8 from "../assets/logoipsum-331.svg";
+---
+
+<Layout title="Our Services | Social Media Marketing Agency">
+  <HeroHome
+    title="Our Services"
+    subtitle="Comprehensive social media marketing solutions tailored to grow your business. From content creation to event coverage, we handle everything."
+    cta={{
+      title: "Get Started",
+      url: "/contact",
+    }}
+  />
+
+  <Introducing
+    title="What We Offer"
+    text="We provide end-to-end social media marketing services that help your business connect with customers, build brand awareness, and drive results."
+    cta={{
+      title: "Contact Us",
+      url: "/contact",
+    }}
+  />
+
+  <StepsTimelineImage
+    title="Our Services"
+    items={[
+      {
+        image: {
+          src: "/service-1.svg",
+          alt: "Social Media Content Creation",
+          width: 1920,
+          height: 1080,
+        },
+        title: "Social Media Content Creation",
+        text: "We create engaging photos and videos for your business including product photography, promotional visuals, short-form content, and creative graphics for posts and stories that capture attention.",
+      },
+      {
+        image: {
+          src: "/service-2.svg",
+          alt: "Photo & Video Editing",
+          width: 1920,
+          height: 1080,
+        },
+        title: "Photo & Video Editing",
+        text: "Our expert editors deliver premium-quality edits including color correction, reels and short video edits, professional transitions, text overlays, effects, and perfectly aligned sound design.",
+      },
+      {
+        image: {
+          src: "/service-3.svg",
+          alt: "Anchoring & Voice Over",
+          width: 1920,
+          height: 1080,
+        },
+        title: "Anchoring / Hosting + Voice Over",
+        text: "Professional presenters for your videos with both male and female anchors available. We also provide voice-over services that enhance trust and customer engagement.",
+      },
+      {
+        image: {
+          src: "/service-4.svg",
+          alt: "Posts & Reels Upload Support",
+          width: 1920,
+          height: 1080,
+        },
+        title: "Posts & Reels Upload Support",
+        text: "Complete promotional posting services including content planning, scheduling, uploading to your social media pages, and creating attractive promotional content at budget-friendly prices.",
+      },
+      {
+        image: {
+          src: "/service-5.svg",
+          alt: "Event Photography & Videography",
+          width: 1920,
+          height: 1080,
+        },
+        title: "Event Photography & Videography",
+        text: "Professional coverage for all events including birthdays, weddings, social functions, and pre-wedding shoots. Our experienced team delivers quality output every time.",
+      },
+    ]}
+  />
+
+  <StepsTimeline
+    title="Our Process"
+    items={[
+      {
+        title: "Consultation",
+        text: "We discuss your business goals, target audience, and platform preferences to create a customized strategy.",
+      },
+      {
+        title: "Content Planning",
+        text: "Our team plans and creates content calendar tailored to your brand voice and marketing objectives.",
+      },
+      {
+        title: "Content Creation",
+        text: "We produce high-quality photos, videos, and graphics that align with your brand identity.",
+      },
+      {
+        title: "Editing & Refinement",
+        text: "Professional editing ensures your content looks premium and engaging.",
+      },
+      {
+        title: "Publishing & Promotion",
+        text: "We upload and schedule content, ensuring optimal timing for maximum engagement.",
+      },
+      {
+        title: "Analytics & Optimization",
+        text: "We track performance and optimize strategy based on insights for better results.",
+      },
+    ]}
+  />
+
+  <Statements
+    items={[
+      {
+        title: "Professional Quality",
+        text: "Every piece of content we create meets professional standards and represents your brand beautifully.",
+      },
+      {
+        title: "Timely Delivery",
+        text: "We understand the importance of deadlines and deliver all projects on time without compromising quality.",
+      },
+      {
+        title: "Customer-Focused",
+        text: "Your satisfaction is our priority. We work closely with you to ensure all expectations are met.",
+      },
+    ]}
+  />
+
+  <TextMarquee
+    class="marquee"
+    texts={[
+      "Professional Content",
+      "Creative Excellence",
+      "Budget-Friendly",
+      "Trusted by Businesses",
+      "Timely Delivery",
+      "Premium Quality",
+    ]}
+  />
+
+  <GalleryText
+    title="Our Work"
+    text="Check out some of our recent projects and see how we help businesses transform their social media presence."
+    cta={{
+      title: "View Portfolio",
+      url: "#",
+    }}
+    images={[
+      {
+        alt: "Brand photography project",
+        src: "/gallery-1.svg",
+        width: 6000,
+        height: 4000,
+      },
+      {
+        alt: "Product video project",
+        src: "/gallery-2.svg",
+        width: 2689,
+        height: 4032,
+      },
+      {
+        alt: "Event coverage project",
+        src: "/gallery-3.svg",
+        width: 3734,
+        height: 5359,
+      },
+    ]}
+    marqueeTexts={[
+      "Creative Firepower",
+      "Built for Speed",
+      "Trusted by Professionals",
+      "Simple, Transparent Pricing",
+    ]}
+  />
+
+  {/* <ImageMarquee
+    images={[
+      {
+        src: logo1.src,
+        alt: "Logo 1",
+      },
+      {
+        src: logo3.src,
+        alt: "Logo 3",
+      },
+      {
+        src: logo4.src,
+        alt: "Logo 4",
+      },
+      {
+        src: logo8.src,
+        alt: "Logo 8",
+      },
+      {
+        src: logo5.src,
+        alt: "Logo 5",
+      },
+      {
+        src: logo6.src,
+        alt: "Logo 6",
+      },
+      {
+        src: logo2.src,
+        alt: "Logo 2",
+      },
+      {
+        src: logo7.src,
+        alt: "Logo 7",
+      },
+    ]}
+  /> */}
+
+  <GL />
+  <GLPlaces />
+</Layout>
+
+<style>
+  .marquee {
+    padding: 2rem 0;
+    z-index: 9;
+  }
+</style>

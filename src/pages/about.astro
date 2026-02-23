@@ -1,0 +1,402 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroHome from "../components/HeroHome.astro";
+import TextMarquee from "../components/TextMarquee.astro";
+import GalleryText from "../components/GalleryText.astro";
+// import ImageMarquee from "../components/ImageMarquee.astro";
+import StepsTimeline from "../components/StepsTimeline.astro";
+import Statements from "../components/Statements.astro";
+import Introducing from "../components/Introducing.astro";
+import GL from "../components/GL.astro";
+import GLPlaces from "../components/GlPlaces.astro";
+
+import logo1 from "../assets/logoipsum-344.svg";
+import logo2 from "../assets/logoipsum-350.svg";
+import logo3 from "../assets/logoipsum-345.svg";
+import logo4 from "../assets/logoipsum-385.svg";
+import logo5 from "../assets/logoipsum-375.svg";
+import logo6 from "../assets/logoipsum-378.svg";
+import logo7 from "../assets/logoipsum-346.svg";
+import logo8 from "../assets/logoipsum-331.svg";
+---
+
+<Layout title="About Us | Social Media Marketing Agency">
+  <HeroHome
+    title="About Us"
+    subtitle="We are a dedicated team of creative professionals passionate about helping businesses grow through professional social media marketing and content creation."
+    cta={{
+      title: "Work With Us",
+      url: "/contact",
+    }}
+  />
+
+  <Introducing
+    title="Our Story"
+    text="Founded with a vision to transform how businesses connect with their audience online, we have grown into a full-service social media marketing agency. Our journey began with a simple belief: every business deserves access to professional marketing tools that drive real results."
+    cta={{
+      title: "Our Services",
+      url: "/services",
+    }}
+  />
+
+  <StepsTimeline
+    title="Our Journey"
+    items={[
+      {
+        title: "Beginning",
+        text: "Started with a small team passionate about social media and content creation.",
+      },
+      {
+        title: "Growth",
+        text: "Expanded our services to include professional photography, videography, and editing.",
+      },
+      {
+        title: "Excellence",
+        text: "Built a reputation for delivering premium quality content that drives results.",
+      },
+      {
+        title: "Today",
+        text: "Serving businesses across multiple industries with comprehensive marketing solutions.",
+      },
+    ]}
+  />
+
+  <section class="stats">
+    <div class="u-container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-count="500">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="200">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="50">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Events Covered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="u-container">
+      <h2 class="u-heading team-title" data-sy-reveal="words">Meet Our Team</h2>
+      <p class="team-subtitle" data-sy-reveal="lines">The creative minds behind our success</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-image">
+            <div class="team-placeholder">
+              <span>VS</span>
+            </div>
+          </div>
+          <h3 class="team-name">Vinit Santoshlal Tank</h3>
+          <span class="team-role">Founder & Director</span>
+          <p class="team-bio">Visionary leader driving our mission to transform businesses through creative marketing.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-image">
+            <div class="team-placeholder">
+              <span>PT</span>
+            </div>
+          </div>
+          <h3 class="team-name">Professional Team</h3>
+          <span class="team-role">Content Creators</span>
+          <p class="team-bio">Skilled photographers and videographers dedicated to capturing your brand's essence.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-image">
+            <div class="team-placeholder">
+              <span>ED</span>
+            </div>
+          </div>
+          <h3 class="team-name">Expert Editors</h3>
+          <span class="team-role">Post-Production</span>
+          <p class="team-bio">Creative editors who transform raw footage into captivating content.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-image">
+            <div class="team-placeholder">
+              <span>AM</span>
+            </div>
+          </div>
+          <h3 class="team-name">Account Managers</h3>
+          <span class="team-role">Client Relations</span>
+          <p class="team-bio">Dedicated managers ensuring seamless communication and project delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Statements
+    items={[
+      {
+        title: "Our Mission",
+        text: "To empower businesses with professional social media marketing solutions that drive growth and build lasting connections with their audience.",
+      },
+      {
+        title: "Our Vision",
+        text: "To be the most trusted partner for businesses seeking to elevate their digital presence and achieve measurable results.",
+      },
+      {
+        title: "Our Values",
+        text: "Quality, creativity, reliability, and client satisfaction are at the heart of everything we do.",
+      },
+    ]}
+  />
+
+  <TextMarquee
+    class="marquee"
+    texts={[
+      "Professional Content",
+      "Creative Excellence",
+      "Budget-Friendly",
+      "Trusted by Businesses",
+      "Timely Delivery",
+      "Premium Quality",
+    ]}
+  />
+
+  <GalleryText
+    title="Our Workspace"
+    text="A creative space where ideas come to life. Our team works collaboratively to deliver exceptional results for every client."
+    cta={{
+      title: "Get in Touch",
+      url: "/contact",
+    }}
+    images={[
+      {
+        alt: "Studio workspace",
+        src: "/gallery-1.svg",
+        width: 6000,
+        height: 4000,
+      },
+      {
+        alt: "Equipment setup",
+        src: "/gallery-2.svg",
+        width: 2689,
+        height: 4032,
+      },
+      {
+        alt: "Creative process",
+        src: "/gallery-3.svg",
+        width: 3734,
+        height: 5359,
+      },
+    ]}
+    marqueeTexts={[
+      "Creative Firepower",
+      "Built for Speed",
+      "Trusted by Professionals",
+      "Simple, Transparent Pricing",
+    ]}
+  />
+
+  {/* <ImageMarquee
+    images={[
+      {
+        src: logo1.src,
+        alt: "Logo 1",
+      },
+      {
+        src: logo3.src,
+        alt: "Logo 3",
+      },
+      {
+        src: logo4.src,
+        alt: "Logo 4",
+      },
+      {
+        src: logo8.src,
+        alt: "Logo 8",
+      },
+      {
+        src: logo5.src,
+        alt: "Logo 5",
+      },
+      {
+        src: logo6.src,
+        alt: "Logo 6",
+      },
+      {
+        src: logo2.src,
+        alt: "Logo 2",
+      },
+      {
+        src: logo7.src,
+        alt: "Logo 7",
+      },
+    ]}
+  /> */}
+
+  <GL />
+  <GLPlaces />
+</Layout>
+
+<style>
+  .marquee {
+    padding: 2rem 0;
+    padding-bottom: 0;
+    z-index: 9;
+  }
+
+  .stats {
+    margin: 8rem 0;
+    padding: 4rem 0;
+    background: var(--color-brand-3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+
+    @media (--mq-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (--mq-phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-heading);
+  }
+
+  .stat-plus {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-alt);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .team {
+    margin: 8rem 0;
+  }
+
+  .team-title {
+    --fs: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .team-subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-text-alt);
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @media (--mq-desktop-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (--mq-phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .team-card {
+    background: var(--color-bg-alt);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s var(--ease-out-cubic);
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  .team-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color-brand-3);
+  }
+
+  .team-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-brand-1);
+  }
+
+  .team-name {
+    font-size: var(--font-size-lg);
+    margin-bottom: 0.25rem;
+  }
+
+  .team-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-brand-1);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .team-bio {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-alt);
+    line-height: 1.6;
+  }
+</style>
+
+<script>
+  import gsap from "gsap";
+  import ScrollTrigger from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const stats = document.querySelectorAll('.stat-number');
+  stats.forEach((stat) => {
+    const target = parseInt(stat.getAttribute('data-count') || '0');
+    gsap.to(stat, {
+      innerHTML: target,
+      duration: 2,
+      snap: { innerHTML: 1 },
+      scrollTrigger: {
+        trigger: stat,
+        start: "top 80%",
+      }
+    });
+  });
+</script>

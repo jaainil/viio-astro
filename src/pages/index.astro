@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import HeroHome from "../components/HeroHome.astro";
 import TextMarquee from "../components/TextMarquee.astro";
 import GalleryText from "../components/GalleryText.astro";
-import ImageMarquee from "../components/ImageMarquee.astro";
+// import ImageMarquee from "../components/TextMarquee.astro";
 import Faqs from "../components/Faqs.astro";
 import StepsTimeline from "../components/StepsTimeline.astro";
 import Plans from "../components/Plans.astro";
@@ -22,91 +22,95 @@ import logo7 from "../assets/logoipsum-346.svg";
 import logo8 from "../assets/logoipsum-331.svg";
 ---
 
-<Layout title="Home">
+<Layout title="Social Media Marketing Agency">
   <HeroHome
-    title="Build Faster. Launch Smarter."
-    subtitle="Everything you need to design, manage, and ship high-quality projects without friction, guesswork, or wasted time."
+    title="Social Media Marketing Agency"
+    subtitle="Do you want to grow your business and reach more customers online? You're in the right place. We help businesses promote their products and services through professional social media marketing, high-quality content creation, and advertising support."
     cta={{
       title: "Get Started",
-      url: "#",
+      url: "#contact",
     }}
   />
 
   <Introducing
-    title="A platform designed to turn ideas into impact"
-    text="From first concept to final delivery, our tools streamline collaboration, eliminate bottlenecks, and keep your team focused on what matters most: results. Simple to adopt, powerful at scale."
+    title="Why Choose Us?"
+    text="We create content that matches your brand and audience. From planning to posting, we manage everything needed to keep your social media active, attractive, and results-driven."
     cta={{
-      title: "Get Started",
-      url: "#",
+      title: "Contact Us",
+      url: "#contact",
     }}
   />
 
   <StepsTimeline
-    title="How it works"
+    title="Our Services"
     items={[
       {
-        title: "Set up in minutes",
-        text: "Create your workspace, invite your team, and configure projects effortlessly—no complex onboarding or technical setup required.",
+        title: "Social Media Content Creation (Photos & Videos)",
+        text: "We create engaging content for your business including product photos, promotional visuals, short videos for social media, and creative graphics for posts and stories.",
       },
       {
-        title: "Collaborate without friction",
-        text: "Centralize communication, assets, and tasks in one place so everyone stays aligned and productive.",
+        title: "Photo & Video Editing",
+        text: "We provide complete editing services including color correction and enhancement, reels and short video edits, professional transitions, text, and effects, and sound and music alignment.",
       },
       {
-        title: "Deliver measurable results",
-        text: "Track progress in real time, optimize workflows, and ship projects faster with complete visibility.",
+        title: "Anchoring / Hosting + Voice Over",
+        text: "Need a presenter for your videos? We provide anchoring services (boys & girls available), voice-over support for promotional videos, and content that improves trust and customer engagement.",
+      },
+      {
+        title: "Posts & Reels Upload Support",
+        text: "We help with post & reel planning and scheduling, uploading content on required social media pages, and creating attractive promotional content with budget-friendly pricing.",
       },
     ]}
   />
 
   <GalleryText
-    title="Designed for teams that value clarity and speed"
-    text="A clean interface, powerful features, and thoughtful details come together to help your team move faster—without sacrificing quality."
+    title="Event Photography & Videography"
+    text="We also provide shooting and editing for events including birthday events, wedding functions, social functions, and pre-wedding shoots. We have an experienced photographer, videographer, and editor team to deliver quality output."
     cta={{
-      title: "Try It Today",
-      url: "#",
+      title: "Book Now",
+      url: "#contact",
     }}
     images={[
       {
-        alt: "Dashboard overview",
-        src: "/image-1.jpg",
+        alt: "Wedding photography",
+        src: "/gallery-1.svg",
         width: 6000,
         height: 4000,
       },
       {
-        alt: "Project collaboration view",
-        src: "/image-2.jpg",
+        alt: "Event videography",
+        src: "/gallery-2.svg",
         width: 2689,
         height: 4032,
       },
       {
-        alt: "Analytics and reporting",
-        src: "/image-3.jpg",
+        alt: "Pre-wedding shoot",
+        src: "/gallery-3.svg",
         width: 3734,
         height: 5359,
       },
     ]}
     marqueeTexts={[
-      "Creative Firepower",
-      "Built for Speed",
-      "Trusted by Professionals",
-      "Simple, Transparent Pricing",
+      "Professional Content",
+      "Creative Excellence",
+      "Budget-Friendly",
+      "Trusted by Businesses",
     ]}
   />
 
   <Statements
     items={[
       {
-        title: "For modern teams",
-        text: "Every feature is designed to reduce complexity and maximize execution speed.",
+        title: "Professional Quality",
+        text: "We create content that matches your brand and audience with professional photo/video creation and editing.",
       },
       {
-        title: "Scales as you grow",
-        text: "Whether you’re a solo creator or a global team, the platform adapts to your workflow.",
+        title: "Reliable Service",
+        text: "Support for posts, reels, and promotional uploads with affordable packages and reliable service.",
       },
       {
-        title: "Real outcomes",
-        text: "Less busywork, more progress—so you can deliver meaningful results consistently.",
+        title: "Complete Solutions",
+        text: "From planning to posting, we manage everything needed to keep your social media active and results-driven.",
       },
     ]}
   />
@@ -114,90 +118,34 @@ import logo8 from "../assets/logoipsum-331.svg";
   <TextMarquee
     class="marquee"
     texts={[
-      "Creative Firepower",
-      "Built for Speed",
-      "Trusted by Professionals",
-      "Simple, Transparent Pricing",
-    ]}
-  />
-
-  <Plans
-    title="Plans & Pricing"
-    subtitle="Start for free, upgrade when you’re ready. No hidden fees, no long-term commitments."
-    items={[
-      {
-        title: "Free Plan",
-        price: {
-          amount: "$0",
-          duration: "month",
-        },
-        link: {
-          title: "Get Started Free",
-          url: "#",
-        },
-        features: [
-          { title: "Up to 50 accounts" },
-          { title: "Unlimited projects" },
-          { title: "Chat support", disabled: true },
-          { title: "Email support", disabled: true },
-          { title: "Custom onboarding", disabled: true },
-        ],
-      },
-      {
-        title: "Premium Plan",
-        price: {
-          amount: "$20",
-          duration: "month",
-        },
-        link: {
-          title: "Start 14-Day Trial",
-          url: "#",
-        },
-        features: [
-          { title: "Up to 50 accounts" },
-          { title: "Unlimited projects" },
-          { title: "Priority chat support" },
-          { title: "Email support" },
-          { title: "Custom onboarding assistance" },
-        ],
-      },
+      "Professional Content",
+      "Creative Excellence",
+      "Budget-Friendly",
+      "Trusted by Businesses",
     ]}
   />
 
   <Faqs
-    title="Frequently Asked Questions"
-    mobileTitle="FAQs"
-    subtitle="Quick answers to the most common questions."
+    title="Contact Us"
+    mobileTitle="Contact"
+    subtitle="Get in touch with us for all your social media marketing needs."
     items={[
       {
-        question: "Who is this platform for?",
-        answer:
-          "It’s built for creators, startups, agencies, and teams who want to move faster without sacrificing quality or control.",
+        question: "Phone",
+        answer: "+91 851-110-1504",
       },
       {
-        question: "Can I upgrade or downgrade at any time?",
-        answer:
-          "Yes. You can change plans whenever you need, with no penalties or long-term contracts.",
+        question: "Email",
+        answer: "vinittank78@gmail.com",
       },
       {
-        question: "Does the free plan really cost nothing?",
-        answer:
-          "Absolutely. The free plan gives you full access to core features so you can evaluate the platform with confidence.",
-      },
-      {
-        question: "Is my data secure?",
-        answer:
-          "Yes. We use industry-standard security practices to protect your data and ensure reliability.",
-      },
-      {
-        question: "Do you offer support during onboarding?",
-        answer:
-          "Premium users receive guided onboarding and priority support to ensure a smooth start.",
+        question: "Name",
+        answer: "Vinit Santoshlal Tank",
       },
     ]}
   />
 
-  <ImageMarquee
+  {/* <ImageMarquee
     images={[
       {
         src: logo1.src,
@@ -232,7 +180,7 @@ import logo8 from "../assets/logoipsum-331.svg";
         alt: "Logo 7",
       },
     ]}
-  />
+  /> */}
 
   <GL />
   <GLPlaces />
