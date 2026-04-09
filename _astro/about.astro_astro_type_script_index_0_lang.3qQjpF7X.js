@@ -1,0 +1,1 @@
+import{g as t}from"./index.DDlvirwQ.js";import{S as o}from"./ScrollTrigger.CB6UHAJl.js";t.registerPlugin(o);const n=document.querySelectorAll(".stat-number");n.forEach(r=>{const e=parseInt(r.getAttribute("data-count")||"0");t.to(r,{innerHTML:e,duration:2,snap:{innerHTML:1},scrollTrigger:{trigger:r,start:"top 80%"}})});
