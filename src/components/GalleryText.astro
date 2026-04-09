@@ -41,12 +41,13 @@ const { title, text, cta, images, marqueeTexts } = Astro.props;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     position: relative;
     z-index: 9;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    backdrop-filter: blur(6px) saturate(1.05);
+    padding: 3rem;
+    border-radius: 2rem;
+    background: var(--color-white);
+    box-shadow: 0 20px 60px rgba(var(--rgb-brand-1), 0.08);
 
     @media (--mq-tablet) {
       gap: 2rem;
@@ -54,10 +55,12 @@ const { title, text, cta, images, marqueeTexts } = Astro.props;
 
     @media (--mq-tablet-sm) {
       flex-direction: column-reverse;
+      padding: 2rem;
     }
 
     @media (--mq-phone) {
-      padding: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
     }
   }
 
@@ -70,15 +73,19 @@ const { title, text, cta, images, marqueeTexts } = Astro.props;
   }
 
   .title {
-    --fs: 2rem;
-    --fw: 600;
-    --lh: 1;
+    --fs: 2.5rem;
+    --fw: 700;
+    --lh: 1.1;
     max-width: 10em;
     margin-bottom: 1rem;
+    color: var(--color-text);
   }
 
   .text {
     max-width: 25em;
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--color-text-alt);
   }
 
   .cta {
